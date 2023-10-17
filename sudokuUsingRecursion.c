@@ -61,17 +61,17 @@ int number_unassigned(int *row, int *col)
 int is_safe(int n, int r, int c)
 {
     int i,j;
-    //checking in row
+    
     for(i=0;i<SIZE;i++)
     {
-        //there is a cell with same value
+    
         if(matrix[r][i] == n)
             return 0;
     }
-    //checking column
+    
     for(i=0;i<SIZE;i++)
     {
-        //there is a cell with the value equal to i
+    
         if(matrix[i][c] == n)
             return 0;
     }
